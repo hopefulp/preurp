@@ -1,0 +1,50 @@
+
+   oo      o       o   oooooo
+  o  o     oo     oo   o     o
+ o    o    o o   o o   o     o
+o      o   o  o o  o   o     o
+oooooooo   o   o   o   oooooo
+o      o   o       o   o
+o      o   o       o   o
+o      o   o       o   o
+
+Amp: Atomistic Machine-learning Package
+Developed by Andrew Peterson, Alireza Khorshidi, and others,
+Brown University.
+PI Website: http://brown.edu/go/catalyst
+Official repository: http://bitbucket.org/andrewpeterson/amp
+Official documentation: http://amp.readthedocs.org/
+Citation:
+  Alireza Khorshidi & Andrew A. Peterson,
+  Computer Physics Communications 207: 310-324 (2016).
+  http://doi.org/10.1016/j.cpc.2016.05.010
+======================================================================
+User: joonho
+Hostname: chi
+Date: 2021-02-05T15:55:21 (2021-02-05T06:55:21 UTC)
+Architecture: x86_64
+PID: 11913
+Amp version: 0.6.1
+Amp directory: /home/joonho/anaconda3/envs/amp06/lib/python3.6/site-packages/amp
+ Last commit: b'unknown hash'
+ Last commit date: b'unknown date'
+Python: v3.6.9: /home/joonho/anaconda3/envs/amp06/bin/python
+ASE v3.18.0: /home/joonho/anaconda3/envs/amp06/lib/python3.6/site-packages/ase
+NumPy v1.16.4: /home/joonho/anaconda3/envs/amp06/lib/python3.6/site-packages/numpy
+SciPy v1.3.1: /home/joonho/anaconda3/envs/amp06/lib/python3.6/site-packages/scipy
+ZMQ/PyZMQ v4.3.2/v18.1.0: /home/joonho/anaconda3/envs/amp06/lib/python3.6/site-packages/zmq
+pxssh: Not available from pxssh.
+pxssh (via pexpect v4.7.0): /home/joonho/anaconda3/envs/amp06/lib/python3.6/site-packages/pexpect/pxssh.py
+======================================================================
+No queuing system detected; single machine assumed.
+Parallel configuration determined from environment for <single machine>:
+  localhost: 12
+
+Amp training started. 2021-02-05T15:55:21
+
+Descriptor: Gaussian
+  (<amp.descriptor.gaussian.Gaussian object at 0x7f736d184550>)
+Model: NeuralNetwork
+  (<amp.model.neuralnetwork.NeuralNetwork object at 0x7f736ba4ff98>)
+Attempting to read images from file training.traj.
+Hashing images...

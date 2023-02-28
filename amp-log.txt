@@ -1,0 +1,372 @@
+
+   oo      o       o   oooooo
+  o  o     oo     oo   o     o
+ o    o    o o   o o   o     o
+o      o   o  o o  o   o     o
+oooooooo   o   o   o   oooooo
+o      o   o       o   o
+o      o   o       o   o
+o      o   o       o   o
+
+Amp: Atomistic Machine-learning Package
+Developed by Andrew Peterson, Alireza Khorshidi, and others,
+Brown University.
+PI Website: http://brown.edu/go/catalyst
+Official repository: http://bitbucket.org/andrewpeterson/amp
+Official documentation: http://amp.readthedocs.io/
+Citation:
+  Alireza Khorshidi & Andrew A. Peterson,
+  Computer Physics Communications 207: 310-324 (2016).
+  http://doi.org/10.1016/j.cpc.2016.05.010
+======================================================================
+User: joonho
+Hostname: chi
+Date: 2020-04-28T12:01:32 (2020-04-28T03:01:32 UTC)
+Architecture: x86_64
+PID: 13449
+Amp version: 0.7.0-beta
+Amp directory: /home/joonho/.local/lib/python3.6/site-packages/amp
+ Last commit: unknown hash
+ Last commit date: unknown date
+Python: v3.6.5: /home/joonho/anaconda3/bin/python
+ASE v3.16.2: /home/joonho/anaconda3/lib/python3.6/site-packages/ase
+NumPy v1.18.2: /home/joonho/anaconda3/lib/python3.6/site-packages/numpy
+SciPy v0.19.1: /home/joonho/anaconda3/lib/python3.6/site-packages/scipy
+ZMQ/PyZMQ v4.2.2/v16.0.2: /home/joonho/anaconda3/lib/python3.6/site-packages/zmq
+pxssh: Not available from pxssh.
+pxssh (via pexpect v4.2.1): /home/joonho/anaconda3/lib/python3.6/site-packages/pexpect/pxssh.py
+======================================================================
+number of cores manually specified; single machine assumed.
+Parallel configuration determined from environment for <single machine>:
+  localhost: 12
+
+Amp training started. 2020-04-28T12:01:32
+
+Descriptor: Gaussian
+  (<amp.descriptor.gaussian.Gaussian object at 0x7f6a3a5f5cf8>)
+Model: NeuralNetwork
+  (<amp.model.neuralnetwork.NeuralNetwork object at 0x7f6a332c7f60>)
+Attempting to read images from file training.traj.
+Hashing images...
+ 20 unique images after hashing.
+...hashing completed. 0.0 min.
+
+Descriptor
+==========
+Cutoff function: <Cosine cutoff with Rc=6.500 from amp.descriptor.cutoffs>
+Finding unique set of elements in training data.
+2 unique elements included: Cu, Pt
+No symmetry functions supplied; creating defaults.
+Number of symmetry functions for each element:
+ Cu: 20
+ Pt: 20
+Cu feature vector functions:
+ 0: G2, Cu, eta = 0.049999999999999996
+ 1: G2, Pt, eta = 0.049999999999999996
+ 2: G2, Cu, eta = 0.2320794416806389
+ 3: G2, Pt, eta = 0.2320794416806389
+ 4: G2, Cu, eta = 1.0772173450159415
+ 5: G2, Pt, eta = 1.0772173450159415
+ 6: G2, Cu, eta = 5.000000000000001
+ 7: G2, Pt, eta = 5.000000000000001
+ 8: G4, (Cu, Cu), eta=0.005, gamma=1.0, zeta=1.0
+ 9: G4, (Cu, Pt), eta=0.005, gamma=1.0, zeta=1.0
+ 10: G4, (Pt, Pt), eta=0.005, gamma=1.0, zeta=1.0
+ 11: G4, (Cu, Cu), eta=0.005, gamma=-1.0, zeta=1.0
+ 12: G4, (Cu, Pt), eta=0.005, gamma=-1.0, zeta=1.0
+ 13: G4, (Pt, Pt), eta=0.005, gamma=-1.0, zeta=1.0
+ 14: G4, (Cu, Cu), eta=0.005, gamma=1.0, zeta=4.0
+ 15: G4, (Cu, Pt), eta=0.005, gamma=1.0, zeta=4.0
+ 16: G4, (Pt, Pt), eta=0.005, gamma=1.0, zeta=4.0
+ 17: G4, (Cu, Cu), eta=0.005, gamma=-1.0, zeta=4.0
+ 18: G4, (Cu, Pt), eta=0.005, gamma=-1.0, zeta=4.0
+ 19: G4, (Pt, Pt), eta=0.005, gamma=-1.0, zeta=4.0
+Pt feature vector functions:
+ 0: G2, Cu, eta = 0.049999999999999996
+ 1: G2, Pt, eta = 0.049999999999999996
+ 2: G2, Cu, eta = 0.2320794416806389
+ 3: G2, Pt, eta = 0.2320794416806389
+ 4: G2, Cu, eta = 1.0772173450159415
+ 5: G2, Pt, eta = 1.0772173450159415
+ 6: G2, Cu, eta = 5.000000000000001
+ 7: G2, Pt, eta = 5.000000000000001
+ 8: G4, (Cu, Cu), eta=0.005, gamma=1.0, zeta=1.0
+ 9: G4, (Cu, Pt), eta=0.005, gamma=1.0, zeta=1.0
+ 10: G4, (Pt, Pt), eta=0.005, gamma=1.0, zeta=1.0
+ 11: G4, (Cu, Cu), eta=0.005, gamma=-1.0, zeta=1.0
+ 12: G4, (Cu, Pt), eta=0.005, gamma=-1.0, zeta=1.0
+ 13: G4, (Pt, Pt), eta=0.005, gamma=-1.0, zeta=1.0
+ 14: G4, (Cu, Cu), eta=0.005, gamma=1.0, zeta=4.0
+ 15: G4, (Cu, Pt), eta=0.005, gamma=1.0, zeta=4.0
+ 16: G4, (Pt, Pt), eta=0.005, gamma=1.0, zeta=4.0
+ 17: G4, (Cu, Cu), eta=0.005, gamma=-1.0, zeta=4.0
+ 18: G4, (Cu, Pt), eta=0.005, gamma=-1.0, zeta=4.0
+ 19: G4, (Pt, Pt), eta=0.005, gamma=-1.0, zeta=4.0
+Calculating neighborlists...
+ Data stored in file amp-neighborlists.
+ File exists with 20 total images, 1 of which are needed.
+ 19 new calculations needed.
+ Parallel processing.
+ Established server at chi:38719.
+ Establishing worker sessions.
+ detecting non-Windows platform, running local connections with pexpect.spawn
+ Starting local connections.
+  Session 0 (localhost): b'Log and error written to /tmp/tmpnv481u7a.stderr'
+  Session 1 (localhost): b'Log and error written to /tmp/tmp3lzurwvc.stderr'
+  Session 2 (localhost): b'Log and error written to /tmp/tmpb0xyifp3.stderr'
+  Session 3 (localhost): b'Log and error written to /tmp/tmpcbysksdk.stderr'
+  Session 4 (localhost): b'Log and error written to /tmp/tmp79dbav2z.stderr'
+  Session 5 (localhost): b'Log and error written to /tmp/tmpwifgxx6e.stderr'
+  Session 6 (localhost): b'Log and error written to /tmp/tmp08v4lrom.stderr'
+  Session 7 (localhost): b'Log and error written to /tmp/tmp0nfgfv_p.stderr'
+  Session 8 (localhost): b'Log and error written to /tmp/tmpelr_sqjn.stderr'
+  Session 9 (localhost): b'Log and error written to /tmp/tmp3tfv0jeg.stderr'
+  Session 10 (localhost): b'Log and error written to /tmp/tmp7p3key61.stderr'
+  Session 11 (localhost): b'Log and error written to /tmp/tmpjxfbt4ub.stderr'
+ Parallel calculations starting...
+  Process 9 returned 1 results.
+  Process 10 returned 1 results.
+  Process 8 returned 1 results.
+  Process 5 returned 2 results.
+  Process 0 returned 2 results.
+  Process 6 returned 2 results.
+  Process 7 returned 1 results.
+  Process 4 returned 2 results.
+  Process 2 returned 2 results.
+  Process 1 returned 2 results.
+  Process 3 returned 2 results.
+  Process 11 returned 1 results.
+  19 new results.
+ ...parallel calculations finished. 0.0 min.
+ Adding new results to database.
+...neighborlists calculated. 0.1 min.
+Fingerprinting images...
+ Data stored in file amp-fingerprints.
+ File exists with 20 total images, 1 of which are needed.
+ 19 new calculations needed.
+ Parallel processing.
+ Established server at chi:45033.
+ Establishing worker sessions.
+ detecting non-Windows platform, running local connections with pexpect.spawn
+ Starting local connections.
+  Session 0 (localhost): b'Log and error written to /tmp/tmph9nxkqpn.stderr'
+  Session 1 (localhost): b'Log and error written to /tmp/tmp4we7ptt1.stderr'
+  Session 2 (localhost): b'Log and error written to /tmp/tmpjyid74oo.stderr'
+  Session 3 (localhost): b'Log and error written to /tmp/tmpmxjvpesb.stderr'
+  Session 4 (localhost): b'Log and error written to /tmp/tmp_xn1lxf3.stderr'
+  Session 5 (localhost): b'Log and error written to /tmp/tmpdd8pvbtj.stderr'
+  Session 6 (localhost): b'Log and error written to /tmp/tmpl321mcrn.stderr'
+  Session 7 (localhost): b'Log and error written to /tmp/tmpp7bui60t.stderr'
+  Session 8 (localhost): b'Log and error written to /tmp/tmpn3tudlez.stderr'
+  Session 9 (localhost): b'Log and error written to /tmp/tmpu3fhymvk.stderr'
+  Session 10 (localhost): b'Log and error written to /tmp/tmpkskeogyx.stderr'
+  Session 11 (localhost): b'Log and error written to /tmp/tmp1kk5ecub.stderr'
+ Parallel calculations starting...
+  Process 9 returned 1 results.
+  Process 10 returned 1 results.
+  Process 7 returned 1 results.
+  Process 2 returned 2 results.
+  Process 8 returned 1 results.
+  Process 5 returned 2 results.
+  Process 3 returned 2 results.
+  Process 4 returned 2 results.
+  Process 1 returned 2 results.
+  Process 0 returned 2 results.
+  Process 11 returned 1 results.
+  Process 6 returned 2 results.
+  19 new results.
+ ...parallel calculations finished. 0.0 min.
+ Adding new results to database.
+...fingerprints calculated. 0.1 min.
+Calculating fingerprint derivatives...
+ Data stored in file amp-fingerprint-primes.
+ File exists with 20 total images, 1 of which are needed.
+ 19 new calculations needed.
+ Parallel processing.
+ Established server at chi:46723.
+ Establishing worker sessions.
+ detecting non-Windows platform, running local connections with pexpect.spawn
+ Starting local connections.
+  Session 0 (localhost): b'Log and error written to /tmp/tmpk_5e9w9l.stderr'
+  Session 1 (localhost): b'Log and error written to /tmp/tmpp3c1yhpa.stderr'
+  Session 2 (localhost): b'Log and error written to /tmp/tmpljopwtvf.stderr'
+  Session 3 (localhost): b'Log and error written to /tmp/tmphf7nl8yz.stderr'
+  Session 4 (localhost): b'Log and error written to /tmp/tmpn8_23mlo.stderr'
+  Session 5 (localhost): b'Log and error written to /tmp/tmpf0uy0zu9.stderr'
+  Session 6 (localhost): b'Log and error written to /tmp/tmpe0889j2f.stderr'
+  Session 7 (localhost): b'Log and error written to /tmp/tmpr1ar6p6p.stderr'
+  Session 8 (localhost): b'Log and error written to /tmp/tmp3lsz76zv.stderr'
+  Session 9 (localhost): b'Log and error written to /tmp/tmpr7tov3tu.stderr'
+  Session 10 (localhost): b'Log and error written to /tmp/tmptijyhvtq.stderr'
+  Session 11 (localhost): b'Log and error written to /tmp/tmpq3g3l06e.stderr'
+ Parallel calculations starting...
+  Process 8 returned 1 results.
+  Process 9 returned 1 results.
+  Process 7 returned 1 results.
+  Process 10 returned 1 results.
+  Process 11 returned 1 results.
+  Process 1 returned 2 results.
+  Process 4 returned 2 results.
+  Process 2 returned 2 results.
+  Process 0 returned 2 results.
+  Process 6 returned 2 results.
+  Process 3 returned 2 results.
+  Process 5 returned 2 results.
+  19 new results.
+ ...parallel calculations finished. 0.0 min.
+ Adding new results to database.
+...fingerprint derivatives calculated. 0.1 min.
+
+Model fitting
+=============
+Found checkpoint file: amp-checkpoint.amp.
+Loaded last neural network parameters from checkpoint. Resuming training run.
+Regression in atom-centered mode.
+Hidden-layer structure:
+ Pt: (10, 10, 10)
+ Cu: (10, 10, 10)
+Initial weights already present.
+Initial scalings already present.
+Starting parameter optimization.
+ Optimizer: <function minimize at 0x7f6a39144598>
+ Optimizer kwargs: {'method': 'BFGS', 'options': {'gtol': 1e-15}, 'jac': True, 'args': (True,)}
+ Parallel processing.
+ Established server at chi:46854.
+ Established publisher at chi:33472.
+ Establishing worker sessions.
+ detecting non-Windows platform, running local connections with pexpect.spawn
+ Starting local connections.
+  Session 0 (localhost): b'Log and stderr written to /tmp/tmp6h4ofqv3.stderr'
+  Session 1 (localhost): b'Log and stderr written to /tmp/tmpnrytixg1.stderr'
+  Session 2 (localhost): b'Log and stderr written to /tmp/tmpfccz0p8t.stderr'
+  Session 3 (localhost): b'Log and stderr written to /tmp/tmpunz6ibnf.stderr'
+  Session 4 (localhost): b'Log and stderr written to /tmp/tmptoak28sa.stderr'
+  Session 5 (localhost): b'Log and stderr written to /tmp/tmpjv9egq3q.stderr'
+  Session 6 (localhost): b'Log and stderr written to /tmp/tmpkpbtarqc.stderr'
+  Session 7 (localhost): b'Log and stderr written to /tmp/tmp1yzrcfml.stderr'
+  Session 8 (localhost): b'Log and stderr written to /tmp/tmp8mqul9ge.stderr'
+  Session 9 (localhost): b'Log and stderr written to /tmp/tmpg9tbsdr8.stderr'
+  Session 10 (localhost): b'Log and stderr written to /tmp/tmpc7wl4oty.stderr'
+  Session 11 (localhost): b'Log and stderr written to /tmp/tmpnq9hr__n.stderr'
+ Loss function convergence criteria:
+  energy_rmse: 0.0001
+  energy_maxresid: None
+  force_rmse: None
+  force_maxresid: None
+ Loss function set-up:
+  energy_coefficient: 1.0
+  force_coefficient: None
+  overfit: 0.0
+  weight duplicates:False
+
+
+                                                          Energy
+ Step                Time   Loss (SSD)   EnergyRMSE     MaxResid
+===== =================== ============ ============ ============
+    1 2020-04-28T12:01:55   3.2553e-02 4.0344e-02 - 9.2703e-02 C
+    2 2020-04-28T12:01:55   3.2553e-02 4.0344e-02 - 9.2703e-02 C
+    3 2020-04-28T12:01:55   3.3014e+00 4.0629e-01 - 8.4497e-01 C
+    4 2020-04-28T12:01:55   8.3874e-02 6.4759e-02 - 1.1668e-01 C
+    5 2020-04-28T12:01:55   2.0412e-02 3.1947e-02 - 7.6989e-02 C
+    6 2020-04-28T12:01:55   1.5174e-02 2.7544e-02 - 7.2010e-02 C
+    7 2020-04-28T12:01:55   1.4395e-02 2.6828e-02 - 5.3040e-02 C
+    8 2020-04-28T12:01:55   1.2986e-02 2.5481e-02 - 5.0995e-02 C
+    9 2020-04-28T12:01:55   1.0532e-02 2.2948e-02 - 4.7522e-02 C
+   10 2020-04-28T12:01:55   6.9460e-03 1.8636e-02 - 3.5926e-02 C
+   11 2020-04-28T12:01:55   4.8936e-03 1.5642e-02 - 3.2292e-02 C
+   12 2020-04-28T12:01:55   3.6888e-03 1.3581e-02 - 2.6672e-02 C
+   13 2020-04-28T12:01:55   3.0921e-03 1.2434e-02 - 2.3223e-02 C
+   14 2020-04-28T12:01:55   2.7810e-03 1.1792e-02 - 2.2393e-02 C
+   15 2020-04-28T12:01:55   2.4779e-03 1.1131e-02 - 1.8695e-02 C
+   16 2020-04-28T12:01:55   2.2459e-03 1.0597e-02 - 1.8079e-02 C
+   17 2020-04-28T12:01:55   2.0426e-03 1.0106e-02 - 1.8666e-02 C
+   18 2020-04-28T12:01:55   1.8187e-03 9.5361e-03 - 1.8919e-02 C
+   19 2020-04-28T12:01:56   1.5893e-03 8.9143e-03 - 1.8390e-02 C
+   20 2020-04-28T12:01:56   1.3480e-03 8.2098e-03 - 1.7971e-02 C
+   21 2020-04-28T12:01:56   1.1633e-03 7.6265e-03 - 1.6494e-02 C
+   22 2020-04-28T12:01:56   1.0378e-03 7.2036e-03 - 1.4596e-02 C
+   23 2020-04-28T12:01:56   9.2669e-04 6.8069e-03 - 1.5193e-02 C
+   24 2020-04-28T12:01:56   8.0585e-04 6.3476e-03 - 1.4886e-02 C
+   25 2020-04-28T12:01:56   6.5122e-04 5.7062e-03 - 1.2571e-02 C
+   26 2020-04-28T12:01:56   5.6076e-04 5.2951e-03 - 1.0901e-02 C
+   27 2020-04-28T12:01:56   5.0771e-04 5.0384e-03 - 9.5380e-03 C
+   28 2020-04-28T12:01:56   4.3830e-04 4.6813e-03 - 9.6638e-03 C
+   29 2020-04-28T12:01:56   3.8533e-04 4.3894e-03 - 1.0508e-02 C
+   30 2020-04-28T12:01:56   3.5234e-04 4.1972e-03 - 9.5553e-03 C
+   31 2020-04-28T12:01:57   3.2709e-04 4.0440e-03 - 8.4222e-03 C
+   32 2020-04-28T12:01:57   3.0415e-04 3.8997e-03 - 7.5253e-03 C
+   33 2020-04-28T12:01:57   2.8308e-04 3.7622e-03 - 7.6670e-03 C
+   34 2020-04-28T12:01:57   2.6503e-04 3.6403e-03 - 7.7659e-03 C
+   35 2020-04-28T12:01:57   2.4831e-04 3.5235e-03 - 7.4834e-03 C
+   36 2020-04-28T12:01:57   2.3174e-04 3.4040e-03 - 6.9419e-03 C
+   37 2020-04-28T12:01:57   2.1453e-04 3.2752e-03 - 6.1729e-03 C
+   38 2020-04-28T12:01:57   1.9654e-04 3.1348e-03 - 6.7748e-03 C
+   39 2020-04-28T12:01:57   1.7689e-04 2.9739e-03 - 7.2369e-03 C
+   40 2020-04-28T12:01:57   1.5218e-04 2.7584e-03 - 7.4590e-03 C
+   41 2020-04-28T12:01:57   1.2315e-04 2.4814e-03 - 7.1011e-03 C
+   42 2020-04-28T12:01:57   1.0119e-04 2.2493e-03 - 6.7792e-03 C
+   43 2020-04-28T12:01:57   8.8007e-05 2.0977e-03 - 5.7471e-03 C
+   44 2020-04-28T12:01:57   8.2592e-05 2.0321e-03 - 5.7691e-03 C
+   45 2020-04-28T12:01:57   7.8361e-05 1.9794e-03 - 5.7380e-03 C
+   46 2020-04-28T12:01:58   7.5281e-05 1.9401e-03 - 5.8615e-03 C
+   47 2020-04-28T12:01:58   7.2282e-05 1.9011e-03 - 5.8048e-03 C
+   48 2020-04-28T12:01:58   7.0416e-05 1.8764e-03 - 5.6966e-03 C
+   49 2020-04-28T12:01:58   6.9358e-05 1.8622e-03 - 5.5348e-03 C
+   50 2020-04-28T12:01:58   6.8633e-05 1.8525e-03 - 5.4555e-03 C
+   51 2020-04-28T12:01:58   6.7774e-05 1.8408e-03 - 5.3712e-03 C
+   52 2020-04-28T12:01:58   6.6761e-05 1.8270e-03 - 5.3150e-03 C
+   53 2020-04-28T12:01:58   6.6252e-05 1.8201e-03 - 5.2844e-03 C
+   54 2020-04-28T12:01:58   6.5982e-05 1.8163e-03 - 5.2753e-03 C
+   55 2020-04-28T12:01:58   6.5679e-05 1.8122e-03 - 5.2431e-03 C
+   56 2020-04-28T12:01:58   6.5167e-05 1.8051e-03 - 5.1901e-03 C
+   57 2020-04-28T12:01:58   6.4273e-05 1.7927e-03 - 5.0889e-03 C
+   58 2020-04-28T12:01:58   6.2729e-05 1.7710e-03 - 4.9399e-03 C
+   59 2020-04-28T12:01:58   6.0241e-05 1.7355e-03 - 4.8271e-03 C
+   60 2020-04-28T12:01:58   5.7356e-05 1.6935e-03 - 4.5797e-03 C
+   61 2020-04-28T12:01:59   5.6153e-05 1.6756e-03 - 4.6006e-03 C
+   62 2020-04-28T12:01:59   5.5236e-05 1.6619e-03 - 4.4549e-03 C
+   63 2020-04-28T12:01:59   5.4441e-05 1.6499e-03 - 4.5428e-03 C
+   64 2020-04-28T12:01:59   5.3339e-05 1.6331e-03 - 4.5265e-03 C
+   65 2020-04-28T12:01:59   5.1531e-05 1.6052e-03 - 4.3547e-03 C
+   66 2020-04-28T12:01:59   4.8670e-05 1.5600e-03 - 4.3060e-03 C
+   67 2020-04-28T12:01:59   4.4987e-05 1.4998e-03 - 4.1186e-03 C
+   68 2020-04-28T12:01:59   4.2441e-05 1.4567e-03 - 3.9762e-03 C
+   69 2020-04-28T12:01:59   3.9650e-05 1.4080e-03 - 3.7225e-03 C
+   70 2020-04-28T12:01:59   3.6601e-05 1.3528e-03 - 3.8258e-03 C
+   71 2020-04-28T12:01:59   3.4746e-05 1.3181e-03 - 3.2320e-03 C
+   72 2020-04-28T12:01:59   3.2517e-05 1.2751e-03 - 3.2790e-03 C
+   73 2020-04-28T12:01:59   3.0185e-05 1.2285e-03 - 3.2169e-03 C
+   74 2020-04-28T12:01:59   2.7949e-05 1.1821e-03 - 2.4330e-03 C
+   75 2020-04-28T12:02:00   2.4561e-05 1.1082e-03 - 2.6036e-03 C
+   76 2020-04-28T12:02:00   2.0144e-05 1.0036e-03 - 2.4941e-03 C
+   77 2020-04-28T12:02:00   1.5710e-05 8.8629e-04 - 2.3072e-03 C
+   78 2020-04-28T12:02:00   1.6638e-05 9.1209e-04 - 2.2592e-03 C
+   79 2020-04-28T12:02:00   1.4330e-05 8.4647e-04 - 1.9409e-03 C
+   80 2020-04-28T12:02:00   1.2506e-05 7.9075e-04 - 1.9822e-03 C
+   81 2020-04-28T12:02:00   1.1379e-05 7.5429e-04 - 1.7796e-03 C
+   82 2020-04-28T12:02:00   1.0417e-05 7.2170e-04 - 1.7265e-03 C
+   83 2020-04-28T12:02:00   9.7043e-06 6.9657e-04 - 1.6803e-03 C
+   84 2020-04-28T12:02:00   8.8629e-06 6.6569e-04 - 1.7140e-03 C
+   85 2020-04-28T12:02:00   8.0774e-06 6.3551e-04 - 1.8140e-03 C
+   86 2020-04-28T12:02:00   7.2686e-06 6.0285e-04 - 1.8660e-03 C
+   87 2020-04-28T12:02:01   6.8205e-06 5.8397e-04 - 1.8522e-03 C
+   88 2020-04-28T12:02:01   6.3945e-06 5.6544e-04 - 1.7910e-03 C
+   89 2020-04-28T12:02:01   6.0363e-06 5.4938e-04 - 1.7464e-03 C
+   90 2020-04-28T12:02:01   5.6491e-06 5.3147e-04 - 1.6490e-03 C
+   91 2020-04-28T12:02:01   5.1744e-06 5.0864e-04 - 1.5758e-03 C
+   92 2020-04-28T12:02:01   4.4555e-06 4.7199e-04 - 1.4026e-03 C
+   93 2020-04-28T12:02:01   3.3692e-06 4.1044e-04 - 1.1726e-03 C
+   94 2020-04-28T12:02:01   2.0151e-06 3.1742e-04 - 8.0620e-04 C
+   95 2020-04-28T12:02:01   1.0135e-06 2.2511e-04 - 4.8936e-04 C
+   96 2020-04-28T12:02:01   4.7677e-07 1.5440e-04 - 3.2954e-04 C
+   97 2020-04-28T12:02:01   3.6418e-07 1.3494e-04 - 3.1395e-04 C
+   98 2020-04-28T12:02:02   2.9830e-07 1.2213e-04 - 2.5209e-04 C
+   99 2020-04-28T12:02:02   2.6974e-07 1.1613e-04 - 2.4786e-04 C
+  100 2020-04-28T12:02:02   2.2617e-07 1.0634e-04 - 2.3768e-04 C
+Saving checkpoint data.
+Overwriting file: "amp-checkpoint.amp". Moving original to "/tmp/tmp8oihgsak.amp".
+  101 2020-04-28T12:02:02   1.7838e-07 9.4442e-05 C 1.9121e-04 C
+...optimization successful. 0.2 min.
+Amp successfully trained. Saving current parameters.
+Parameters saved in file "amp.amp".
+This file can be opened with `calc = Amp.load('amp.amp')`

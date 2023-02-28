@@ -1,0 +1,58 @@
+
+   oo      o       o   oooooo
+  o  o     oo     oo   o     o
+ o    o    o o   o o   o     o
+o      o   o  o o  o   o     o
+oooooooo   o   o   o   oooooo
+o      o   o       o   o
+o      o   o       o   o
+o      o   o       o   o
+
+Amp: Atomistic Machine-learning Package
+Developed by Andrew Peterson, Alireza Khorshidi, and others,
+Brown University.
+PI Website: http://brown.edu/go/catalyst
+Official repository: http://bitbucket.org/andrewpeterson/amp
+Official documentation: http://amp.readthedocs.io/
+Citation:
+  Alireza Khorshidi & Andrew A. Peterson,
+  Computer Physics Communications 207: 310-324 (2016).
+  http://doi.org/10.1016/j.cpc.2016.05.010
+======================================================================
+User: joonho
+Hostname: eta
+Date: 2021-08-04T01:37:11 (2021-08-03T16:37:11 UTC)
+Architecture: x86_64
+PID: 23227
+Amp version: 0.7.0-beta
+Amp directory: /home/joonho/anaconda3/lib/python3.7/site-packages/amp
+ Last commit: unknown hash
+ Last commit date: unknown date
+Python: v3.7.4: /home/joonho/anaconda3/bin/python
+ASE v3.21.1: /home/joonho/anaconda3/lib/python3.7/site-packages/ase
+NumPy v1.17.2: /home/joonho/anaconda3/lib/python3.7/site-packages/numpy
+SciPy v1.3.1: /home/joonho/anaconda3/lib/python3.7/site-packages/scipy
+ZMQ/PyZMQ v4.3.1/v18.1.0: /home/joonho/anaconda3/lib/python3.7/site-packages/zmq
+pxssh: Not available from pxssh.
+pxssh (via pexpect v4.7.0): /home/joonho/anaconda3/lib/python3.7/site-packages/pexpect/pxssh.py
+======================================================================
+number of cores manually specified; single machine assumed.
+Parallel configuration determined from environment for <single machine>:
+  localhost: 16
+Loaded file: amp.amp
+Calculation requested.
+Calculating potential energy...
+Cutoff function: <Cosine cutoff with Rc=6.500 from amp.descriptor.cutoffs>
+2 unique elements included: Cu, Pt
+Number of symmetry functions for each element:
+ Cu: 20
+ Pt: 20
+Cu feature vector functions:
+Timing:                      incl.     excl.
+---------------------------------------------------
+calculate:                   0.011     0.000   0.6% |
+ calculate_fingerprints:     0.011     0.011  21.1% |-------|
+Other:                       0.040     0.040  78.3% |------------------------------|
+---------------------------------------------------
+Total:                                 0.050 100.0%
+
